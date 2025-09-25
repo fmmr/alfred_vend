@@ -1,4 +1,8 @@
-dash_url=https://fraud-dash.svc.prod.finn.no/alfred
+if [ "$1" = "--local" ]; then
+  dash_url=http://local.finn.no:8080/alfred
+else
+  dash_url=https://fraud-dash.svc.prod.finn.no/alfred
+fi
 for app in apps slack; do 
   echo "============================================"
   echo "  Updating: $app"
