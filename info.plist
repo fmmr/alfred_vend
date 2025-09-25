@@ -64,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +90,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -101,6 +101,19 @@
 		</array>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<array/>
+		<key>DF133716-5860-48E3-BA42-8DC7E8A9E104</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Fredrik Rødland</string>
@@ -217,35 +230,6 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<integer>3</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>81C61094-C020-4586-B618-11B082662949</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -294,6 +278,43 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<string>6CE90EBE-FB0D-47B8-92A2-3A613F697887</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>81C61094-C020-4586-B618-11B082662949</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -481,9 +502,9 @@ fi
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>585</real>
 		</dict>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<dict>
@@ -509,37 +530,44 @@ fi
 		<key>72BD4814-5820-4D51-A718-CA45E807020D</key>
 		<dict>
 			<key>xpos</key>
-			<real>90</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>410</real>
+			<real>405</real>
 		</dict>
 		<key>81C61094-C020-4586-B618-11B082662949</key>
 		<dict>
 			<key>xpos</key>
-			<real>515</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>325</real>
 		</dict>
 		<key>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</key>
 		<dict>
 			<key>xpos</key>
-			<real>90</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>535</real>
+			<real>520</real>
 		</dict>
 		<key>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</key>
 		<dict>
 			<key>xpos</key>
-			<real>655</real>
+			<real>635</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>585</real>
 		</dict>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<dict>
 			<key>xpos</key>
-			<real>805</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>250</real>
+			<real>320</real>
+		</dict>
+		<key>DF133716-5860-48E3-BA42-8DC7E8A9E104</key>
+		<dict>
+			<key>xpos</key>
+			<real>505</real>
+			<key>ypos</key>
+			<real>375</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
