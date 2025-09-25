@@ -21,6 +21,49 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2827BA8B-1DE0-4A10-9916-33628B1BA2A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4009581A-9AF2-4E94-8FEC-3B9236660F5D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string>FINN</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9060D04E-5A3F-42FB-AAE6-0ECB261E6A81</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>DBA</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF6C3476-782E-45EF-A3F8-1E3BA152BE47</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>TORI</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F0E8E26-D75A-4C9C-9AD9-7A170700A4E4</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>BLOCKET</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<array>
 			<dict>
@@ -422,6 +465,25 @@ cat slack.json</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -478,21 +540,107 @@ fi
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
+				<key>skipvarencode</key>
 				<false/>
-				<key>transient</key>
-				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://es-moderation-ad.svc.prod.finn.no/ad-*/_search?q=ad.adId:{query}&amp;size=1</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
+			<string>4009581A-9AF2-4E94-8FEC-3B9236660F5D</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://es-platform-moderation.platform-es.dba.dk:9200/ad-*/_search?q=ad.adId:{query}&amp;size=1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9060D04E-5A3F-42FB-AAE6-0ECB261E6A81</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>fraud</string>
+				<key>subtext</key>
+				<string>FINN</string>
+				<key>text</key>
+				<string>Fraud ES</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2827BA8B-1DE0-4A10-9916-33628B1BA2A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://fraud.es.beta.tori.fi:9200/ad-*/_search?q=ad.adId:{query}&amp;size=1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>DF6C3476-782E-45EF-A3F8-1E3BA152BE47</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://es-platform-moderation.platform-es.blocket.se:9200/ad-*/_search?q=ad.adId:{query}&amp;size=1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3F0E8E26-D75A-4C9C-9AD9-7A170700A4E4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -502,9 +650,16 @@ fi
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<dict>
 			<key>xpos</key>
-			<real>415</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>645</real>
+		</dict>
+		<key>2827BA8B-1DE0-4A10-9916-33628B1BA2A0</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>910</real>
 		</dict>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<dict>
@@ -512,6 +667,20 @@ fi
 			<real>30</real>
 			<key>ypos</key>
 			<real>140</real>
+		</dict>
+		<key>3F0E8E26-D75A-4C9C-9AD9-7A170700A4E4</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>1095</real>
+		</dict>
+		<key>4009581A-9AF2-4E94-8FEC-3B9236660F5D</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>750</real>
 		</dict>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<dict>
@@ -541,6 +710,13 @@ fi
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
+		<key>9060D04E-5A3F-42FB-AAE6-0ECB261E6A81</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>865</real>
+		</dict>
 		<key>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</key>
 		<dict>
 			<key>xpos</key>
@@ -551,9 +727,9 @@ fi
 		<key>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</key>
 		<dict>
 			<key>xpos</key>
-			<real>635</real>
+			<real>205</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>645</real>
 		</dict>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<dict>
@@ -568,6 +744,13 @@ fi
 			<real>505</real>
 			<key>ypos</key>
 			<real>375</real>
+		</dict>
+		<key>DF6C3476-782E-45EF-A3F8-1E3BA152BE47</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>980</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
