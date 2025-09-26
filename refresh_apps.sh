@@ -3,7 +3,7 @@ if [ "$1" = "--local" ]; then
 else
   dash_url=https://fraud-dash.svc.prod.finn.no/alfred
 fi
-for app in apps slack; do 
+for app in apps slack apps_sub; do 
   echo "============================================"
   echo "  Updating: $app"
   curl -q -s  $dash_url/$app |jq 'del(.cache)' > $app.new
