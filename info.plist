@@ -120,16 +120,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BB19E236-963C-4F30-838A-9FB8DC24034C</string>
-				<key>modifiers</key>
-				<integer>8388608</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>BC40A266-4166-4DF5-BFDB-5091C3E0911A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -751,12 +741,10 @@ fi
 				<integer>102</integer>
 				<key>script</key>
 				<string>query=$1
-
-hei=$tmp_url?id=$query
 final_url="${tmp_url//&lt;SUBST&gt;/$query}"
 final_url="$(echo -n "$final_url" | xargs)"
 
-echo $final_url &gt;&amp;2
+# echo $final_url &gt;&amp;2
 echo -n $final_url</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
