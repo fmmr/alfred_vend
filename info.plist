@@ -77,6 +77,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3292173D-AFB2-4F67-8772-E2B1E67DE036</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<array>
 			<dict>
@@ -107,7 +120,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
+				<string>DA53A225-D453-46B1-AA71-5473AEA2AC34</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -129,11 +142,63 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83CC9C4C-7309-4688-B6BD-0ED4D9B09716</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BB19E236-963C-4F30-838A-9FB8DC24034C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CD81B3F1-3519-4CFA-B23E-A31E726772F3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BB19E236-963C-4F30-838A-9FB8DC24034C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -352,10 +417,23 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
+			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -363,9 +441,9 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
@@ -375,7 +453,7 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
-				<string>a</string>
+				<string>test</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -385,18 +463,20 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Reading Apps</string>
+				<string>Reading finn Loginid</string>
 				<key>script</key>
-				<string># curl -q -s "$FRAUD_DASH_URL/alfred/apps"
-cat apps.json</string>
+				<string>query="{query}"
+echo "QUERY: " $query &gt;&amp;2
+cat test.json
+</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Get App</string>
+				<string>Get your FINN loginid</string>
 				<key>title</key>
-				<string>Get App</string>
+				<string>Get FINN loginid</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -405,9 +485,17 @@ cat apps.json</string>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>72BD4814-5820-4D51-A718-CA45E807020D</string>
+			<string>3292173D-AFB2-4F67-8772-E2B1E67DE036</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>DF133716-5860-48E3-BA42-8DC7E8A9E104</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -465,21 +553,73 @@ cat slack.json</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>a</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Apps</string>
+				<key>script</key>
+				<string># curl -q -s "$FRAUD_DASH_URL/alfred/apps"
+cat apps.json</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Get App</string>
+				<key>title</key>
+				<string>Get App</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
+			<string>72BD4814-5820-4D51-A718-CA45E807020D</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>DA53A225-D453-46B1-AA71-5473AEA2AC34</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -540,6 +680,25 @@ fi
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>skipqueryencode</key>
@@ -555,6 +714,147 @@ fi
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>4009581A-9AF2-4E94-8FEC-3B9236660F5D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>am</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Apps</string>
+				<key>script</key>
+				<string># curl -q -s "$FRAUD_DASH_URL/alfred/apps"
+
+cat apps.json</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Get App</string>
+				<key>title</key>
+				<string>Get App</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CD81B3F1-3519-4CFA-B23E-A31E726772F3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+hei=$tmp_url?id=$query
+
+echo  $query &gt;&amp;2
+echo  $hei &gt;&amp;2
+echo  $tmp_url &gt;&amp;2
+echo  $hei</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>83CC9C4C-7309-4688-B6BD-0ED4D9B09716</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>tmp_url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BB19E236-963C-4F30-838A-9FB8DC24034C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -647,12 +947,19 @@ fi
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</key>
+		<dict>
+			<key>xpos</key>
+			<real>1035</real>
+			<key>ypos</key>
+			<real>335</real>
+		</dict>
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>710</real>
 		</dict>
 		<key>2827BA8B-1DE0-4A10-9916-33628B1BA2A0</key>
 		<dict>
@@ -667,6 +974,13 @@ fi
 			<real>30</real>
 			<key>ypos</key>
 			<real>140</real>
+		</dict>
+		<key>3292173D-AFB2-4F67-8772-E2B1E67DE036</key>
+		<dict>
+			<key>xpos</key>
+			<real>830</real>
+			<key>ypos</key>
+			<real>335</real>
 		</dict>
 		<key>3F0E8E26-D75A-4C9C-9AD9-7A170700A4E4</key>
 		<dict>
@@ -699,9 +1013,9 @@ fi
 		<key>72BD4814-5820-4D51-A718-CA45E807020D</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>405</real>
+			<real>655</real>
 		</dict>
 		<key>81C61094-C020-4586-B618-11B082662949</key>
 		<dict>
@@ -709,6 +1023,20 @@ fi
 			<real>505</real>
 			<key>ypos</key>
 			<real>325</real>
+		</dict>
+		<key>83CC9C4C-7309-4688-B6BD-0ED4D9B09716</key>
+		<dict>
+			<key>xpos</key>
+			<real>1455</real>
+			<key>ypos</key>
+			<real>825</real>
+		</dict>
+		<key>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</key>
+		<dict>
+			<key>xpos</key>
+			<real>1105</real>
+			<key>ypos</key>
+			<real>825</real>
 		</dict>
 		<key>9060D04E-5A3F-42FB-AAE6-0ECB261E6A81</key>
 		<dict>
@@ -722,14 +1050,35 @@ fi
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>520</real>
+			<real>585</real>
+		</dict>
+		<key>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</key>
+		<dict>
+			<key>xpos</key>
+			<real>1290</real>
+			<key>ypos</key>
+			<real>825</real>
 		</dict>
 		<key>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</key>
 		<dict>
 			<key>xpos</key>
-			<real>205</real>
+			<real>200</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>740</real>
+		</dict>
+		<key>BB19E236-963C-4F30-838A-9FB8DC24034C</key>
+		<dict>
+			<key>xpos</key>
+			<real>1025</real>
+			<key>ypos</key>
+			<real>855</real>
+		</dict>
+		<key>CD81B3F1-3519-4CFA-B23E-A31E726772F3</key>
+		<dict>
+			<key>xpos</key>
+			<real>820</real>
+			<key>ypos</key>
+			<real>825</real>
 		</dict>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<dict>
@@ -737,6 +1086,13 @@ fi
 			<real>605</real>
 			<key>ypos</key>
 			<real>320</real>
+		</dict>
+		<key>DA53A225-D453-46B1-AA71-5473AEA2AC34</key>
+		<dict>
+			<key>xpos</key>
+			<real>1435</real>
+			<key>ypos</key>
+			<real>655</real>
 		</dict>
 		<key>DF133716-5860-48E3-BA42-8DC7E8A9E104</key>
 		<dict>
