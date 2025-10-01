@@ -13,7 +13,7 @@ case "$brand" in
   blocket)    url="https://solr-odin.svc.blocket.se/solr/ads/select$params" ;;
   tori)       url="https://solr-odin.svc.tori.fi/solr/ads/select$params" ;;
   # dev
-  finndev)    url="https://solr-bap.svc.prod.finn.no/solr/finn/select${params}&qf=id" ;;
+  finndev)    url="https://solr-odin.svc.dev.finn.no/solr/finn/select${params}&qf=id" ;;
   dbadev)     url="https://solr-odin.svc.dev.dba.dk/solr/ads/select$params" ;;
   blocketdev) url="https://solr-odin.svc.dev.blocket.se/solr/ads/select$params" ;;
   toridev)    url="https://solr-odin.svc.dev.tori.fi/solr/ads/select$params" ;;
