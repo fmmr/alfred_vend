@@ -1,14 +1,18 @@
 {
-  "items" : [ {
-    "uid" : "just_an_uid",
-    "title" : "Fredrik Rødland",
-    "subtitle" : "Copy id",
-    "arg" : ["23440"],
-    "autocomplete" : "Fredrik Rødland",
-    "match" : "Fredrik Rødland fmr",
-    "type" : "default",
-    "icon" : {
-      "path" : "icon.png"
+  "items": [
+    {
+      "uid": "just_an_uid",
+      "title": "Fredrik Rødland",
+      "subtitle": "Copy id",
+      "arg": [
+        "23440"
+      ],
+      "autocomplete": "Fredrik Rødland",
+      "match": "Fredrik Rødland fmr",
+      "titleype": "default",
+      "icon": {
+        "path": "icon.png"
+      }
     }
   ]
 }
