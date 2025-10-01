@@ -21,6 +21,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2CB32564-4046-4389-9F12-17B78440357D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<array>
 			<dict>
@@ -164,6 +190,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>98057482-50F2-486F-91FB-D5FECD61445A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>35A74AED-684A-469A-94DB-624CB2C6F7F9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</key>
 		<array>
 			<dict>
@@ -270,6 +319,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -353,27 +423,6 @@ EOF</string>
 			<string>6076AEBD-184D-4C28-85D2-912B248781E7</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1019,7 +1068,7 @@ fi
           "path": "icons/finn.png"
         },
         "autocomplete": "FINNkode",
-        "match": "FINNkode finn blocket tori dba",
+        "match": "FINNkode finncode finn blocket tori dba",
         "type": "default",
         "mods": {
           "cmd": {
@@ -1055,7 +1104,7 @@ EOF</string>
 				<key>subtext</key>
 				<string>FINN</string>
 				<key>title</key>
-				<string>Finnkode</string>
+				<string>View finncode</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1125,6 +1174,81 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>latest ad on {var:brand}: {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"386f46b0fc3f543fa11a1b5d028ffa5221639f43.png","title":"FINN","arg":"finn","subtitle":""},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori","arg":"tori","subtitle":""},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba","arg":"dba","subtitle":""},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket","arg":"blocket","subtitle":""},{"title":"FINN dev","arg":"finndev"},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori dev","arg":"toridev"},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba dev","arg":"dbadev"},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket dev","arg":"blocketdev"}]</string>
+				<key>keyword</key>
+				<string>finncode</string>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get latest Finncode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2CB32564-4046-4389-9F12-17B78440357D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_latest_ad_id.sh $brand</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>skipqueryencode</key>
@@ -1190,6 +1314,45 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>3165036A-A20D-41FF-AA1F-6AD67094902F</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>brand</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>35A74AED-684A-469A-94DB-624CB2C6F7F9</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1483,6 +1646,20 @@ cat apps.json</string>
 			<key>ypos</key>
 			<real>260</real>
 		</dict>
+		<key>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</key>
+		<dict>
+			<key>xpos</key>
+			<real>575</real>
+			<key>ypos</key>
+			<real>530</real>
+		</dict>
+		<key>2CB32564-4046-4389-9F12-17B78440357D</key>
+		<dict>
+			<key>xpos</key>
+			<real>410</real>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<dict>
 			<key>xpos</key>
@@ -1496,6 +1673,20 @@ cat apps.json</string>
 			<real>645</real>
 			<key>ypos</key>
 			<real>40</real>
+		</dict>
+		<key>35A74AED-684A-469A-94DB-624CB2C6F7F9</key>
+		<dict>
+			<key>xpos</key>
+			<real>835</real>
+			<key>ypos</key>
+			<real>560</real>
+		</dict>
+		<key>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</key>
+		<dict>
+			<key>xpos</key>
+			<real>835</real>
+			<key>ypos</key>
+			<real>440</real>
 		</dict>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<dict>
@@ -1559,6 +1750,13 @@ cat apps.json</string>
 			<real>645</real>
 			<key>ypos</key>
 			<real>150</real>
+		</dict>
+		<key>98057482-50F2-486F-91FB-D5FECD61445A</key>
+		<dict>
+			<key>xpos</key>
+			<real>645</real>
+			<key>ypos</key>
+			<real>500</real>
 		</dict>
 		<key>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</key>
 		<dict>
