@@ -73,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B2857615-45DA-427E-9653-5D2E8EDADED4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<array>
 			<dict>
@@ -319,27 +332,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -423,6 +415,79 @@ EOF</string>
 			<string>6076AEBD-184D-4C28-85D2-912B248781E7</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>test</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading finn Loginid</string>
+				<key>script</key>
+				<string>query="{query}"
+echo "QUERY: " $query &gt;&amp;2
+cat test.json
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Get your FINN loginid</string>
+				<key>title</key>
+				<string>Get FINN loginid</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3292173D-AFB2-4F67-8772-E2B1E67DE036</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -533,17 +598,17 @@ EOF</string>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
-				<string>test</string>
+				<string>modad</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -553,20 +618,64 @@ EOF</string>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Reading finn Loginid</string>
+				<string></string>
 				<key>script</key>
-				<string>query="{query}"
-echo "QUERY: " $query &gt;&amp;2
-cat test.json
-</string>
+				<string>cat &lt;&lt;EOF
+{
+  "items": [
+    {
+      "uid": "ModerationAd",
+      "title": "Moderation Ad",
+      "subtitle": "Moderation Ad on FINN",
+      "arg": "https://annonsekontroll.finn.no/vetting/control?adId={query}",
+      "icon": {
+        "path": "icons/finn.png"
+      },
+      "autocomplete": "Moderation Ad",
+      "match": "Moderation Ad prod finn moderation",
+      "type": "default",
+      "mods": {
+        "cmd": {
+          "arg": "https://moderation-ad-webapp.platform.svc.dba.dk/vetting/control?adId={query}",
+          "subtitle": "Moderation Ad on DBA",
+          "icon": {
+            "path": "icons/dba.png"
+          }
+        },
+        "alt": {
+          "arg": "https://moderation-ad-webapp.platform.svc.tori.fi/vetting/control?adId={query}",
+          "subtitle": "Moderation Ad on Tori",
+          "icon": {
+            "path": "icons/tori.png"
+          }
+        },
+        "ctrl": {
+          "arg": "https://moderation-ad-webapp.platform.svc.blocket.se/vetting/control?adId={query}",
+          "subtitle": "Moderation Ad on Blocket",
+          "icon": {
+            "path": "icons/blocket.png"
+          }
+        },
+"shift": {
+          "arg": "https://annonsekontroll.finn.no/vetting/control?adId={query} https://moderation-ad-webapp.platform.svc.dba.dk/vetting/control?adId={query} https://moderation-ad-webapp.platform.svc.tori.fi/vetting/control?adId={query} https://moderation-ad-webapp.platform.svc.blocket.se/vetting/control?adId={query}",
+          "subtitle": "Open Moderation Ad on ALL (Finn, DBA, Tori, Blocket)",
+          "icon": {
+            "path": "icons/all.png"
+          }
+        }
+      }
+    }
+  ]
+}
+EOF</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Get your FINN loginid</string>
+				<string>fetch ad</string>
 				<key>title</key>
-				<string>Get FINN loginid</string>
+				<string>Moderation Ad</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -575,7 +684,117 @@ cat test.json
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>3292173D-AFB2-4F67-8772-E2B1E67DE036</string>
+			<string>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B2857615-45DA-427E-9653-5D2E8EDADED4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>adcontent</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cat &lt;&lt;EOF
+  {
+    "items": [
+      {
+        "uid": "Ad Content Server prod",
+        "title": "Ad Content Server (prod)",
+        "subtitle": "Ad Content Server on FINN prod",
+        "arg": "https://ad-content-server.svc.prod.finn.no/items/{query}/HEAD",
+        "icon": {
+          "path": "icons/finn.png"
+        },
+        "autocomplete": "Ad Content Server prod",
+        "match": "Ad Content Server prod facade fasaden",
+        "type": "default",
+        "mods": {
+          "cmd": {
+            "arg": "https://ad-content-server.platform.svc.dba.dk/items/{query}/HEAD",
+            "subtitle": "Ad Content Server on dba prod",
+            "icon": {
+              "path": "icons/dba.png"
+            }
+          },
+          "alt": {
+            "arg": "https://ad-content-server.platform.svc.tori.fi/items/{query}/HEAD",
+            "subtitle": "Ad Content Server on Tori prod",
+            "icon": {
+              "path": "icons/tori.png"
+            }
+          },
+          "ctrl": {
+            "arg": "https://ad-content-server.platform.svc.blocket.se/items/{query}/HEAD",
+            "subtitle": "Ad Content Server on Blocket prod",
+            "icon": {
+              "path": "icons/blocket.png"
+            }
+          }
+        }
+      }
+    ]
+  }
+EOF</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Ad Content Server on FINN prod</string>
+				<key>title</key>
+				<string>Ad Content Server prod</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -704,27 +923,6 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>B2857615-45DA-427E-9653-5D2E8EDADED4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -772,114 +970,6 @@ cat slack.json</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>adcontent</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>cat &lt;&lt;EOF
-  {
-    "items": [
-      {
-        "uid": "Ad Content Server prod",
-        "title": "Ad Content Server (prod)",
-        "subtitle": "Ad Content Server on FINN prod",
-        "arg": "https://ad-content-server.svc.prod.finn.no/items/{query}/HEAD",
-        "icon": {
-          "path": "icons/finn.png"
-        },
-        "autocomplete": "Ad Content Server prod",
-        "match": "Ad Content Server prod facade fasaden",
-        "type": "default",
-        "mods": {
-          "cmd": {
-            "arg": "https://ad-content-server.platform.svc.dba.dk/items/{query}/HEAD",
-            "subtitle": "Ad Content Server on dba prod",
-            "icon": {
-              "path": "icons/dba.png"
-            }
-          },
-          "alt": {
-            "arg": "https://ad-content-server.platform.svc.tori.fi/items/{query}/HEAD",
-            "subtitle": "Ad Content Server on Tori prod",
-            "icon": {
-              "path": "icons/tori.png"
-            }
-          },
-          "ctrl": {
-            "arg": "https://ad-content-server.platform.svc.blocket.se/items/{query}/HEAD",
-            "subtitle": "Ad Content Server on Blocket prod",
-            "icon": {
-              "path": "icons/blocket.png"
-            }
-          }
-        }
-      }
-    ]
-  }
-EOF</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Ad Content Server on FINN prod</string>
-				<key>title</key>
-				<string>Ad Content Server prod</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1120,6 +1210,25 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1195,81 +1304,6 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"386f46b0fc3f543fa11a1b5d028ffa5221639f43.png","title":"FINN","arg":"finn","subtitle":""},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori","arg":"tori","subtitle":""},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba","arg":"dba","subtitle":""},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket","arg":"blocket","subtitle":""},{"title":"FINN dev","arg":"finndev"},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori dev","arg":"toridev"},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba dev","arg":"dbadev"},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket dev","arg":"blocketdev"}]</string>
-				<key>keyword</key>
-				<string>finncode</string>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Get latest Finncode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>2CB32564-4046-4389-9F12-17B78440357D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./get_latest_ad_id.sh $brand</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1316,6 +1350,81 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<string>3165036A-A20D-41FF-AA1F-6AD67094902F</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_latest_ad_id.sh $brand</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"386f46b0fc3f543fa11a1b5d028ffa5221639f43.png","title":"FINN","arg":"finn","subtitle":""},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori","arg":"tori","subtitle":""},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba","arg":"dba","subtitle":""},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket","arg":"blocket","subtitle":""},{"title":"FINN dev","arg":"finndev"},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori dev","arg":"toridev"},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba dev","arg":"dbadev"},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket dev","arg":"blocketdev"}]</string>
+				<key>keyword</key>
+				<string>finncode</string>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get latest Finncode</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2CB32564-4046-4389-9F12-17B78440357D</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1409,25 +1518,6 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string></string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1452,6 +1542,25 @@ echo -n $final_url</string>
 			<string>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1688,6 +1797,13 @@ cat apps.json</string>
 			<key>ypos</key>
 			<real>440</real>
 		</dict>
+		<key>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<dict>
 			<key>xpos</key>
@@ -1782,7 +1898,7 @@ cat apps.json</string>
 		<key>B2857615-45DA-427E-9653-5D2E8EDADED4</key>
 		<dict>
 			<key>xpos</key>
-			<real>435</real>
+			<real>480</real>
 			<key>ypos</key>
 			<real>150</real>
 		</dict>
