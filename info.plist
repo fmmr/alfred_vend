@@ -8,6 +8,19 @@
 	<string>FMR</string>
 	<key>connections</key>
 	<dict>
+		<key>18B3A139-3F7C-416D-9982-5E7A6F99606E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26FE0045-CCCC-467B-A63F-23318178ED80</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<array>
 			<dict>
@@ -51,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +103,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -112,11 +125,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>66CF0D95-26EA-49B8-BC83-3A8AC869C09B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6CE90EBE-FB0D-47B8-92A2-3A613F697887</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -280,6 +306,46 @@
 		</array>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<array/>
+		<key>DA5C70AD-2D77-4AB5-A971-793697A89FD2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>054D714E-54D5-4678-AE5E-C4248BB5CE2A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E1391079-E622-4170-897F-A8A5B84CEE35</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5865248A-8F23-4FDC-A1F9-0D33E1D97BA3</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F54461FD-281A-41C2-8C63-1D3E321BE66E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>6C5754C1-4C62-47C3-BD27-78742991A167</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F788F206-E9D6-4165-BB36-B993B088ACE0</key>
 		<array>
 			<dict>
@@ -1091,12 +1157,12 @@ EOF</string>
 				<string>Reading finn Loginid</string>
 				<key>script</key>
 				<string>query="{query}"
-hei=`curl --connect-timeout 1 -q -s "$SEARCH_DASH_LOGIN_URL?alfred=true&amp;input=$query"`
-if [ $? -eq 0 ]; then
+#hei=`curl --connect-timeout 1 -q -s "$SEARCH_DASH_LOGIN_URL?alfred=true&amp;input=$query"`
+#if [ $? -eq 0 ]; then
     echo $hei
-else
+#else
    cat fmr.json
-fi
+#fi
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1229,6 +1295,77 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>2</integer>
+				<key>backgroundcolor</key>
+				<string>#010121D8</string>
+				<key>fadespeed</key>
+				<integer>100</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string>Impact</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>45447</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>054D714E-54D5-4678-AE5E-C4248BB5CE2A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>m</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>✨🪄  Magic Fraud Daily Møteromsnummer🪄✨</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>DA5C70AD-2D77-4AB5-A971-793697A89FD2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1254,10 +1391,7 @@ EOF</string>
 				<key>runningsubtext</key>
 				<string>Reading Github</string>
 				<key>script</key>
-				<string># old url from search - is really pretty broken by now.
-#curl -q -s "https://search-dash-back.svc.prod.finn.no/search/internal-backstage/apps?alfred=1&amp;default=github"
-
-curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 
 </string>
 				<key>scriptargtype</key>
@@ -1283,21 +1417,15 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>latest ad on {var:brand}: {query}</string>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
+			<string>F54461FD-281A-41C2-8C63-1D3E321BE66E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1354,21 +1482,155 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^http.*</string>
+						<key>outputlabel</key>
+						<string>URL</string>
+						<key>uid</key>
+						<string>5865248A-8F23-4FDC-A1F9-0D33E1D97BA3</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^humioctl search.*</string>
+						<key>outputlabel</key>
+						<string>HUMIO-CMD</string>
+						<key>uid</key>
+						<string>6C5754C1-4C62-47C3-BD27-78742991A167</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>UNKNOWN</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
+			<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>humioctl search aurora_view '#owner="*fraud" | #nmp_cluster_name="*prod*" | ("nmp_app"="moderation-message-smtp" OR "nmp_app"="moderation-message-webapp")' \
+  --start 10m --end now -l \
+  --fmt $'{time}\t{loglevel}\t{nmp_app}\t{@rawstring}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>26FE0045-CCCC-467B-A63F-23318178ED80</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>test</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>FMR TESTING</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>18B3A139-3F7C-416D-9982-5E7A6F99606E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>h</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Humio Logs</string>
+				<key>script</key>
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humio"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Get Humio Logs</string>
+				<key>title</key>
+				<string>Get Humio Logs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6CE90EBE-FB0D-47B8-92A2-3A613F697887</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>latest ad on {var:brand}: {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1429,6 +1691,56 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>hl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Repos</string>
+				<key>script</key>
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humioquery"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show Humio Logs</string>
+				<key>title</key>
+				<string>humiocli</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>66CF0D95-26EA-49B8-BC83-3A8AC869C09B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1462,56 +1774,6 @@ curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>35A74AED-684A-469A-94DB-624CB2C6F7F9</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>h</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Reading Humio Logs</string>
-				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humio"
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Get Humio Logs</string>
-				<key>title</key>
-				<string>Get Humio Logs</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>6CE90EBE-FB0D-47B8-92A2-3A613F697887</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1741,12 +2003,33 @@ cat apps.json</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>054D714E-54D5-4678-AE5E-C4248BB5CE2A</key>
+		<dict>
+			<key>xpos</key>
+			<real>835</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
 		<key>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</key>
 		<dict>
 			<key>xpos</key>
 			<real>830</real>
 			<key>ypos</key>
 			<real>40</real>
+		</dict>
+		<key>18B3A139-3F7C-416D-9982-5E7A6F99606E</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
+		<key>26FE0045-CCCC-467B-A63F-23318178ED80</key>
+		<dict>
+			<key>xpos</key>
+			<real>840</real>
+			<key>ypos</key>
+			<real>500</real>
 		</dict>
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<dict>
@@ -1760,21 +2043,21 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>575</real>
 			<key>ypos</key>
-			<real>530</real>
+			<real>740</real>
 		</dict>
 		<key>2CB32564-4046-4389-9F12-17B78440357D</key>
 		<dict>
 			<key>xpos</key>
 			<real>410</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>710</real>
 		</dict>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>495</real>
 		</dict>
 		<key>3292173D-AFB2-4F67-8772-E2B1E67DE036</key>
 		<dict>
@@ -1788,14 +2071,14 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>835</real>
 			<key>ypos</key>
-			<real>560</real>
+			<real>770</real>
 		</dict>
 		<key>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</key>
 		<dict>
 			<key>xpos</key>
 			<real>835</real>
 			<key>ypos</key>
-			<real>440</real>
+			<real>650</real>
 		</dict>
 		<key>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</key>
 		<dict>
@@ -1809,7 +2092,7 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>390</real>
+			<real>385</real>
 		</dict>
 		<key>6076AEBD-184D-4C28-85D2-912B248781E7</key>
 		<dict>
@@ -1818,12 +2101,19 @@ cat apps.json</string>
 			<key>ypos</key>
 			<real>40</real>
 		</dict>
+		<key>66CF0D95-26EA-49B8-BC83-3A8AC869C09B</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>715</real>
+		</dict>
 		<key>6CE90EBE-FB0D-47B8-92A2-3A613F697887</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>610</real>
+			<real>605</real>
 		</dict>
 		<key>705BF984-68BA-4135-8A56-8C064252D3A6</key>
 		<dict>
@@ -1837,7 +2127,7 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>860</real>
+			<real>1060</real>
 		</dict>
 		<key>812CDFBD-1E18-4B95-AEBF-998EFA1079D1</key>
 		<dict>
@@ -1851,7 +2141,7 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>400</real>
 			<key>ypos</key>
-			<real>720</real>
+			<real>930</real>
 		</dict>
 		<key>8CE61610-B621-4B3E-BB09-740CA7F14BA1</key>
 		<dict>
@@ -1870,9 +2160,9 @@ cat apps.json</string>
 		<key>98057482-50F2-486F-91FB-D5FECD61445A</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>650</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>710</real>
 		</dict>
 		<key>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</key>
 		<dict>
@@ -1884,9 +2174,9 @@ cat apps.json</string>
 		<key>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</key>
 		<dict>
 			<key>xpos</key>
-			<real>585</real>
+			<real>650</real>
 			<key>ypos</key>
-			<real>720</real>
+			<real>930</real>
 		</dict>
 		<key>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</key>
 		<dict>
@@ -1914,35 +2204,56 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>320</real>
 			<key>ypos</key>
-			<real>750</real>
+			<real>960</real>
 		</dict>
 		<key>BC40A266-4166-4DF5-BFDB-5091C3E0911A</key>
 		<dict>
 			<key>xpos</key>
 			<real>830</real>
 			<key>ypos</key>
-			<real>860</real>
+			<real>1060</real>
 		</dict>
 		<key>CD81B3F1-3519-4CFA-B23E-A31E726772F3</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>735</real>
+			<real>945</real>
 		</dict>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<dict>
 			<key>xpos</key>
-			<real>240</real>
+			<real>365</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>375</real>
+		</dict>
+		<key>DA5C70AD-2D77-4AB5-A971-793697A89FD2</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
+		<key>E1391079-E622-4170-897F-A8A5B84CEE35</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>495</real>
+		</dict>
+		<key>F54461FD-281A-41C2-8C63-1D3E321BE66E</key>
+		<dict>
+			<key>xpos</key>
+			<real>365</real>
+			<key>ypos</key>
+			<real>490</real>
 		</dict>
 		<key>F788F206-E9D6-4165-BB36-B993B088ACE0</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>965</real>
 		</dict>
 		<key>FE76052E-BC82-4E40-9212-765F85AD5064</key>
 		<dict>
@@ -1959,12 +2270,10 @@ cat apps.json</string>
 		<key>FRAUD_DASH_LOCAL_URL</key>
 		<string>http://local.finn.no:8080</string>
 		<key>FRAUD_DASH_URL</key>
-		<string>https://fraud-dash.svc.prod.finn.no</string>
+		<string>https://fraud-dash.horizontal.svc.finn.no/</string>
 		<key>SEARCH_DASH_LOGIN_URL</key>
 		<string>https://search-dash-back.svc.prod.finn.no/search/internal-backstage/login</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
