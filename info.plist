@@ -86,6 +86,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3B8580CA-7F66-4938-9D15-E8C7B4349122</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BA24EF19-915E-4F52-80CC-41598490EC00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</key>
 		<array>
 			<dict>
@@ -129,7 +142,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
+				<string>BA24EF19-915E-4F52-80CC-41598490EC00</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -142,7 +155,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
+				<string>BA24EF19-915E-4F52-80CC-41598490EC00</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -168,7 +181,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BC40A266-4166-4DF5-BFDB-5091C3E0911A</string>
+				<string>CA75B33E-E235-481A-8F36-A40540117719</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -278,11 +291,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B7479A54-8732-4366-B50F-EE7D33248D7C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BA24EF19-915E-4F52-80CC-41598490EC00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BA24EF19-915E-4F52-80CC-41598490EC00</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E1391079-E622-4170-897F-A8A5B84CEE35</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>BB19E236-963C-4F30-838A-9FB8DC24034C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>8BBE4F87-DD15-41C7-A808-7AA293F8A74B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CA75B33E-E235-481A-8F36-A40540117719</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BC40A266-4166-4DF5-BFDB-5091C3E0911A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -498,79 +550,6 @@ EOF</string>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>test</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Reading finn Loginid</string>
-				<key>script</key>
-				<string>query="{query}"
-echo "QUERY: " $query &gt;&amp;2
-cat test.json
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Get your FINN loginid</string>
-				<key>title</key>
-				<string>Get FINN loginid</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3292173D-AFB2-4F67-8772-E2B1E67DE036</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
 				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
@@ -763,6 +742,27 @@ EOF</string>
 			<string>4B0948B6-2C77-4EF4-A171-4E1E065EF5FE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>latest ad on {var:brand}: {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -978,74 +978,93 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./get_latest_ad_id.sh $brand</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>skipqueryencode</key>
-				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>B9C0A91B-CE06-4345-BECF-E041E079B3AE</string>
+			<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"386f46b0fc3f543fa11a1b5d028ffa5221639f43.png","title":"FINN","arg":"finn","subtitle":""},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori","arg":"tori","subtitle":""},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba","arg":"dba","subtitle":""},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket","arg":"blocket","subtitle":""},{"title":"FINN dev","arg":"finndev"},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori dev","arg":"toridev"},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba dev","arg":"dbadev"},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket dev","arg":"blocketdev"}]</string>
+				<key>keyword</key>
+				<string>finncode</string>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get latest Finncode</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2CB32564-4046-4389-9F12-17B78440357D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
 				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>keyword</key>
-				<string>s</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading channels</string>
-				<key>script</key>
-				<string>#echo ${FRAUD_DASH_URL}
-#echo $FRAUD_DASH_URL
-#echo "$FRAUD_DASH_LOCAL_URL/alfred/slack" &gt;&amp;2
-#curl -q -s "$FRAUD_DASH_LOCAL_URL/alfred/slack"
-cat slack.json</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Slack Someone</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<key>variables</key>
+				<dict>
+					<key>brand</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</string>
+			<string>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>35A74AED-684A-469A-94DB-624CB2C6F7F9</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1142,62 +1161,6 @@ EOF</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>keyword</key>
-				<string>loginid</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Reading finn Loginid</string>
-				<key>script</key>
-				<string>query="{query}"
-#hei=`curl --connect-timeout 1 -q -s "$SEARCH_DASH_LOGIN_URL?alfred=true&amp;input=$query"`
-#if [ $? -eq 0 ]; then
-    echo $hei
-#else
-   cat fmr.json
-#fi
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Get your FINN loginid</string>
-				<key>title</key>
-				<string>Get FINN loginid</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>2726874B-EA72-4AE7-B557-0E6586D5E324</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>2</integer>
@@ -1286,90 +1249,73 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>2</integer>
-				<key>backgroundcolor</key>
-				<string>#010121D8</string>
-				<key>fadespeed</key>
-				<integer>100</integer>
-				<key>fillmode</key>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>font</key>
-				<string>Impact</string>
-				<key>ignoredynamicplaceholders</key>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
-				<key>largetypetext</key>
-				<string>45447</string>
-				<key>textcolor</key>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>test</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading finn Loginid</string>
+				<key>script</key>
+				<string>query="{query}"
+echo "QUERY: " $query &gt;&amp;2
+cat test.json
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
+				<key>subtext</key>
+				<string>Get your FINN loginid</string>
+				<key>title</key>
+				<string>Get FINN loginid</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>054D714E-54D5-4678-AE5E-C4248BB5CE2A</string>
+			<string>3292173D-AFB2-4F67-8772-E2B1E67DE036</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
 				<string></string>
-				<key>skipqueryencode</key>
-				<true/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
+				<key>title</key>
 				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>m</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>✨🪄  Magic Fraud Daily Møteromsnummer🪄✨</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>DA5C70AD-2D77-4AB5-A971-793697A89FD2</string>
+			<string>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1427,17 +1373,97 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
 				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>F54461FD-281A-41C2-8C63-1D3E321BE66E</string>
+			<string>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B9C0A91B-CE06-4345-BECF-E041E079B3AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>s</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading channels</string>
+				<key>script</key>
+				<string>#echo ${FRAUD_DASH_URL}
+#echo $FRAUD_DASH_URL
+#echo "$FRAUD_DASH_LOCAL_URL/alfred/slack" &gt;&amp;2
+#curl -q -s "$FRAUD_DASH_LOCAL_URL/alfred/slack"
+cat slack.json</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Slack Someone</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1492,6 +1518,21 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>F54461FD-281A-41C2-8C63-1D3E321BE66E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -1538,40 +1579,77 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
 				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>loginid</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading finn Loginid</string>
 				<key>script</key>
-				<string>humioctl search aurora_view '#owner="*fraud" | #nmp_cluster_name="*prod*" | ("nmp_app"="moderation-message-smtp" OR "nmp_app"="moderation-message-webapp")' \
-  --start 10m --end now -l \
-  --fmt $'{time}\t=if(loglevel="INFO", "\033[0mINFO", =if(loglevel="WARN", "\033[33mWARN", "\033[1;31mERROR"    ))\033[0m\t{nmp_app}\t{@rawstring}'</string>
+				<string>query="{query}"
+#hei=`curl --connect-timeout 1 -q -s "$SEARCH_DASH_LOGIN_URL?alfred=true&amp;input=$query"`
+#if [ $? -eq 0 ]; then
+    echo $hei
+#else
+   cat fmr.json
+#fi
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Get your FINN loginid</string>
+				<key>title</key>
+				<string>Get FINN loginid</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>26FE0045-CCCC-467B-A63F-23318178ED80</string>
+			<string>2726874B-EA72-4AE7-B557-0E6586D5E324</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>test</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>FMR TESTING</string>
-				<key>withspace</key>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>18B3A139-3F7C-416D-9982-5E7A6F99606E</string>
+			<string>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1647,23 +1725,160 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>hdev</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Repos</string>
+				<key>script</key>
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiodeverror"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string>Show Humio Dev Error Logs</string>
 				<key>title</key>
-				<string>latest ad on {var:brand}: {query}</string>
+				<string>Humio Dev Error Logs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</string>
+			<string>3B8580CA-7F66-4938-9D15-E8C7B4349122</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>BA24EF19-915E-4F52-80CC-41598490EC00</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>2</integer>
+				<key>backgroundcolor</key>
+				<string>#010121D8</string>
+				<key>fadespeed</key>
+				<integer>100</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string>Impact</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>45447</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>054D714E-54D5-4678-AE5E-C4248BB5CE2A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>m</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>✨🪄  Magic Fraud Daily Møteromsnummer🪄✨</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>DA5C70AD-2D77-4AB5-A971-793697A89FD2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>herr</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Reading Repos</string>
+				<key>script</key>
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humioerror"
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show Humio Error Logs</string>
+				<key>title</key>
+				<string>Humio Error Logs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B7479A54-8732-4366-B50F-EE7D33248D7C</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1693,7 +1908,7 @@ EOF</string>
 				<key>runningsubtext</key>
 				<string>Reading Repos</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humioquery"
+				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiocmd"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1718,95 +1933,40 @@ EOF</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./get_latest_ad_id.sh $brand</string>
-				<key>scriptargtype</key>
 				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>script</key>
+				<string>humioctl search aurora_view '#owner="*fraud" | #nmp_cluster_name="*prod*" | ("nmp_app"="moderation-message-smtp" OR "nmp_app"="moderation-message-webapp")' \
+  --start 10m --end now -l \
+  --fmt $'{time}\t=if(loglevel="INFO", "\033[0mINFO", =if(loglevel="WARN", "\033[33mWARN", "\033[1;31mERROR"    ))\033[0m\t{nmp_app}\t{@rawstring}'</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>98057482-50F2-486F-91FB-D5FECD61445A</string>
+			<string>26FE0045-CCCC-467B-A63F-23318178ED80</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"imagefile":"386f46b0fc3f543fa11a1b5d028ffa5221639f43.png","title":"FINN","arg":"finn","subtitle":""},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori","arg":"tori","subtitle":""},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba","arg":"dba","subtitle":""},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket","arg":"blocket","subtitle":""},{"title":"FINN dev","arg":"finndev"},{"imagefile":"1fc2e8379e8d643bdb87e391c94619dd80c72b70.png","title":"Tori dev","arg":"toridev"},{"imagefile":"5abd49d7e2a6d003e15f74b58f7028f5f4b8a375.png","title":"dba dev","arg":"dbadev"},{"imagefile":"778438e0cdf5f55c57676efd83bd85b021d8b290.png","title":"Blocket dev","arg":"blocketdev"}]</string>
 				<key>keyword</key>
-				<string>finncode</string>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string></string>
+				<string>test</string>
 				<key>subtext</key>
 				<string></string>
-				<key>title</key>
-				<string>Get latest Finncode</string>
+				<key>text</key>
+				<string>FMR TESTING</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>2CB32564-4046-4389-9F12-17B78440357D</string>
+			<string>18B3A139-3F7C-416D-9982-5E7A6F99606E</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>brand</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>35A74AED-684A-469A-94DB-624CB2C6F7F9</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2007,7 +2167,7 @@ cat apps_sub.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Apps</string>
 				<key>script</key>
-				<string># curl -q -s "$FRAUD_DASH_URL/alfred/apps"
+				<string>#curl -q -s "$FRAUD_DASH_URL/alfred/apps"
 cat apps.json</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -2029,6 +2189,23 @@ cat apps.json</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}'</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>CA75B33E-E235-481A-8F36-A40540117719</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -2037,51 +2214,51 @@ cat apps.json</string>
 		<key>054D714E-54D5-4678-AE5E-C4248BB5CE2A</key>
 		<dict>
 			<key>xpos</key>
-			<real>835</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>695</real>
 		</dict>
 		<key>07CB7B5C-71C3-495A-B9A0-DC23545B81A4</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>365</real>
 		</dict>
 		<key>18B3A139-3F7C-416D-9982-5E7A6F99606E</key>
 		<dict>
 			<key>xpos</key>
-			<real>650</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>805</real>
 		</dict>
 		<key>26FE0045-CCCC-467B-A63F-23318178ED80</key>
 		<dict>
 			<key>xpos</key>
-			<real>840</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>805</real>
 		</dict>
 		<key>2726874B-EA72-4AE7-B557-0E6586D5E324</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>585</real>
 		</dict>
 		<key>2ACEAEAF-1C45-4BC5-91F5-6B624D2D37CC</key>
 		<dict>
 			<key>xpos</key>
-			<real>700</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>750</real>
+			<real>180</real>
 		</dict>
 		<key>2CB32564-4046-4389-9F12-17B78440357D</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>720</real>
+			<real>150</real>
 		</dict>
 		<key>3165036A-A20D-41FF-AA1F-6AD67094902F</key>
 		<dict>
@@ -2093,28 +2270,35 @@ cat apps.json</string>
 		<key>3292173D-AFB2-4F67-8772-E2B1E67DE036</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>365</real>
 		</dict>
 		<key>35A74AED-684A-469A-94DB-624CB2C6F7F9</key>
 		<dict>
 			<key>xpos</key>
-			<real>960</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>775</real>
+			<real>205</real>
 		</dict>
 		<key>37B1A707-7F2B-48A0-AB53-B8F07DB06A77</key>
 		<dict>
 			<key>xpos</key>
-			<real>960</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>85</real>
+		</dict>
+		<key>3B8580CA-7F66-4938-9D15-E8C7B4349122</key>
+		<dict>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>605</real>
 		</dict>
 		<key>494964B3-4DB2-43A8-984B-ECBBC95E0E9E</key>
 		<dict>
 			<key>xpos</key>
-			<real>365</real>
+			<real>605</real>
 			<key>ypos</key>
 			<real>605</real>
 		</dict>
@@ -2128,7 +2312,7 @@ cat apps.json</string>
 		<key>53CCCFE2-7C7B-4BDD-BC7A-70B2AB604416</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>35</real>
 			<key>ypos</key>
 			<real>385</real>
 		</dict>
@@ -2165,7 +2349,7 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1060</real>
+			<real>1005</real>
 		</dict>
 		<key>812CDFBD-1E18-4B95-AEBF-998EFA1079D1</key>
 		<dict>
@@ -2179,7 +2363,7 @@ cat apps.json</string>
 			<key>xpos</key>
 			<real>400</real>
 			<key>ypos</key>
-			<real>930</real>
+			<real>875</real>
 		</dict>
 		<key>8CE61610-B621-4B3E-BB09-740CA7F14BA1</key>
 		<dict>
@@ -2191,16 +2375,16 @@ cat apps.json</string>
 		<key>95FE39D6-DB7D-46B7-BF2B-E9A6BE5BD2EB</key>
 		<dict>
 			<key>xpos</key>
-			<real>645</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>475</real>
 		</dict>
 		<key>98057482-50F2-486F-91FB-D5FECD61445A</key>
 		<dict>
 			<key>xpos</key>
-			<real>775</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>720</real>
+			<real>150</real>
 		</dict>
 		<key>A2B3B331-3F78-4A44-8EAE-EEBFFD4F2332</key>
 		<dict>
@@ -2212,16 +2396,16 @@ cat apps.json</string>
 		<key>A4B99845-BAA3-4BAC-9905-B9179EDC8B30</key>
 		<dict>
 			<key>xpos</key>
-			<real>650</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>930</real>
+			<real>875</real>
 		</dict>
 		<key>B0F85AB5-FA10-4F7C-8A70-F495E7334DBF</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>585</real>
 		</dict>
 		<key>B2857615-45DA-427E-9653-5D2E8EDADED4</key>
 		<dict>
@@ -2230,68 +2414,89 @@ cat apps.json</string>
 			<key>ypos</key>
 			<real>150</real>
 		</dict>
+		<key>B7479A54-8732-4366-B50F-EE7D33248D7C</key>
+		<dict>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>715</real>
+		</dict>
 		<key>B9C0A91B-CE06-4345-BECF-E041E079B3AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>475</real>
+		</dict>
+		<key>BA24EF19-915E-4F52-80CC-41598490EC00</key>
+		<dict>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>690</real>
 		</dict>
 		<key>BB19E236-963C-4F30-838A-9FB8DC24034C</key>
 		<dict>
 			<key>xpos</key>
 			<real>320</real>
 			<key>ypos</key>
-			<real>960</real>
+			<real>905</real>
 		</dict>
 		<key>BC40A266-4166-4DF5-BFDB-5091C3E0911A</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>800</real>
 			<key>ypos</key>
-			<real>1060</real>
+			<real>1005</real>
+		</dict>
+		<key>CA75B33E-E235-481A-8F36-A40540117719</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>1030</real>
 		</dict>
 		<key>CD81B3F1-3519-4CFA-B23E-A31E726772F3</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>945</real>
+			<real>890</real>
 		</dict>
 		<key>CE160731-7CEF-4FDD-9937-8C19F6C0D0AA</key>
 		<dict>
 			<key>xpos</key>
-			<real>365</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>385</real>
 		</dict>
 		<key>DA5C70AD-2D77-4AB5-A971-793697A89FD2</key>
 		<dict>
 			<key>xpos</key>
-			<real>650</real>
+			<real>910</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>695</real>
 		</dict>
 		<key>E1391079-E622-4170-897F-A8A5B84CEE35</key>
 		<dict>
 			<key>xpos</key>
-			<real>220</real>
+			<real>460</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>500</real>
 		</dict>
 		<key>F54461FD-281A-41C2-8C63-1D3E321BE66E</key>
 		<dict>
 			<key>xpos</key>
-			<real>365</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>490</real>
+			<real>495</real>
 		</dict>
 		<key>F788F206-E9D6-4165-BB36-B993B088ACE0</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>965</real>
+			<real>910</real>
 		</dict>
 		<key>FE76052E-BC82-4E40-9212-765F85AD5064</key>
 		<dict>

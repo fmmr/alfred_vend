@@ -1,4 +1,5 @@
 if [ "$1" = "--local" ]; then
+  echo "running locally"
   dash_url=http://local.finn.no:8080/alfred
 else
   dash_url=https://fraud-dash.horizontal.svc.finn.no/alfred
