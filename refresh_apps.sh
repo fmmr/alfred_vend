@@ -4,7 +4,32 @@ if [ "$1" = "--local" ]; then
 else
   dash_url=https://fraud-dash.horizontal.svc.finn.no/alfred
 fi
-for app in apps slack apps_sub; do 
+
+# Bail early with a helpful message if VPN is down (403) or host unreachable.
+probe_code=$(curl -q -s -o /dev/null -w '%{http_code}' \
+  --connect-timeout 3 --max-time 10 "$dash_url/apps")
+case "$probe_code" in
+  200)
+    : # good, continue
+    ;;
+  401|403)
+    echo "🔒 fraud-dash returned HTTP $probe_code — VPN required."
+    echo "   Launching AppGate SDP..."
+    open -a "AppGate SDP" 2>/dev/null
+    exit 1
+    ;;
+  000)
+    echo "🌐 Cannot reach $dash_url (no network / DNS). Launching AppGate SDP..."
+    open -a "AppGate SDP" 2>/dev/null
+    exit 1
+    ;;
+  *)
+    echo "⚠️ Unexpected HTTP $probe_code from $dash_url — aborting."
+    exit 1
+    ;;
+esac
+
+for app in apps slack apps_sub; do
   echo "============================================"
   echo "  Updating: $app"
   curl -q -s  $dash_url/$app |jq 'del(.cache)' > $app.new

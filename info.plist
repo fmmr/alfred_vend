@@ -1347,7 +1347,7 @@ cat test.json
 				<key>runningsubtext</key>
 				<string>Reading Github</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true"
 
 </string>
 				<key>scriptargtype</key>
@@ -1493,7 +1493,7 @@ cat slack.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Builds</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=builds"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=builds"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1679,7 +1679,7 @@ cat slack.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Humio Logs</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humio"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humio"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1750,7 +1750,7 @@ cat slack.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Repos</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiodeverror"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiodeverror"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1796,7 +1796,7 @@ cat slack.json</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>largetypetext</key>
-				<string>45447</string>
+				<string>627 011</string>
 				<key>textcolor</key>
 				<string></string>
 				<key>wrapat</key>
@@ -1815,7 +1815,7 @@ cat slack.json</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>m</string>
+				<string>møterom</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -1858,7 +1858,7 @@ cat slack.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Repos</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humioerror"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humioerror"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1908,7 +1908,7 @@ cat slack.json</string>
 				<key>runningsubtext</key>
 				<string>Reading Repos</string>
 				<key>script</key>
-				<string>curl -q -s "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiocmd"
+				<string>./fraud_dash.sh "$FRAUD_DASH_URL/alfred/fraud-repos?include_search=true&amp;main_link=humiocmd"
 </string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -2417,7 +2417,7 @@ cat apps.json</string>
 		<key>B7479A54-8732-4366-B50F-EE7D33248D7C</key>
 		<dict>
 			<key>xpos</key>
-			<real>175</real>
+			<real>180</real>
 			<key>ypos</key>
 			<real>715</real>
 		</dict>
